@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <div className="w-full heroBg bg-cover h-screen absolute top-0">
+    <div className="w-full heroBg bg-cover h-screen relative -top-[91px]">
       <div className="max-w-[1080px] mx-auto text-[#96BB7C] pt-20">
         <h3> Online training</h3>
         <h1 className="text-[58px] max-w-[500px] font-bold leading-[80px] text-[#252B42] my-6">

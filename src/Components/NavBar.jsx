@@ -9,7 +9,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
   const handleClick = () => setToggle(!toggle);
   return (
-    <div className=" w-full h-[91px] mx-auto bg-light-white ">
+    <div className=" w-full h-[91px] mx-auto bg-light-white">
       <div className="md:max-w-[1080px] max-w-[680px] mx-auto w-full h-full flex items-center justify-between  px-5 lg:px-0">
         <div className="flex justify-between gap-x-14">
           <h3>BrandName</h3>
@@ -39,7 +39,7 @@ const NavBar = () => {
             </button>
           </a>
         </div>
-        <div className="md:hidden" onClick={handleClick}>
+        <div className="md:hidden z-10 relative" onClick={handleClick}>
           {toggle ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
       </div>
